@@ -64,7 +64,9 @@ insert into employee (id, name, birthday, email) values (48, 'Dasie Luff', '1958
 insert into employee (id, name, birthday, email) values (49, 'Randa Stiegar', '2000-07-14', 'rstiegar1c@comsenz.com');
 insert into employee (id, name, birthday, email) values (50, 'Alick Coppledike', '1986-12-04', 'acoppledike1d@infoseek.co.jp');
 
+
 -- Q3) Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
 UPDATE employee
 SET id = 58,
     name = 'Burak Kağan KORKMAZ',
@@ -93,7 +95,11 @@ SET name = 'Employee Y'
 WHERE id BETWEEN 15 AND 20
 RETURNING *;
 
+
+
 --Q4) Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+
 DELETE FROM employee
 WHERE id = 12
 RETURNING *;  -- Returning is only used for displaying last deleted rows
